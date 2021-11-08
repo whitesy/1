@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>葉思妤簡介</title>
+
+	<style type="text/css">
+		* { 
+			font-family: "標楷體"; }
+
+		header { 
+			font-size: 36px;
+			color: #eeeeee; }
+
+		.col-lg-4 {
+			border: 1px solid; }
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script>
+		$(document).ready(function(){
+			$("#I").hover(function(){
+				$("#PICTURE").attr("src","me.jpg");
+			});
+
+			$("#pu").hover(function(){
+				$("#PICTURE").attr("src","pu.jpg");
+			});
+
+			$("#csim").hover(function(){
+				$("#PICTURE").attr("src","pucsim.jpg");
+			});
+
+			$("#PICTURE").click(function(){
+				$("#PICTURE").hide();
+				$("#PICTURE").fadeIn("slow")
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">MENU</a>
+					
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href = "#aboutsy">關於我</a></li>
+				<li class="nav-item"><a class="nav-link" href = "#job">職涯測驗結果</a></li>
+				<li class="nav-item"><a class="nav-link" href = "#future">未來規劃</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main class="container-fluid bg-secondary text-white text-center">
+
+		<nav>
+			<h1><a href = "http://www1.pu.edu.tw/~s1091817"
+				class="text-reset text-decoration-none text-dark bg-secondary" target="_blank" id = "I">葉思妤 (Szu-Yu Yeh)</a></h1>
+			<h2><a href = "https://www.pu.edu.tw/"
+				class="text-reset text-decoration-none text-dark bg-secondary" id = "pu">靜宜大學</a>
+			 /<a href = "https://csim.pu.edu.tw/"
+			 class="text-reset text-decoration-none text-dark bg-secondary" id = "csim">資訊管理學系</a></h2>
+		</nav>
+
+		<img src="me.jpg" alt="照片" class="img-fluid" id = "PICTURE">
+		<br><br><br>
+
+		<div class="row">
+			<session id = "aboutsy" class="col-lg-4 text-left">
+				<header>關於我</header>
+				<h3>就讀靜宜大學資訊管理學系<br></h3>
+				<h5>喜歡按部就班的行事，樂於處理資料、計算及文書，
+				寧願實際動手作而不喜歡多言，比較喜歡獨立做事，
+				避免主觀性、學術性、富想像力或人際互動的工作類型。<br></h5>
+				<h3>E-Mail:<a href="mailto:s1091817@pu.edu.tw"
+					class="text-reset text-decoration-none text-white bg-secondary">s1091817@pu.edu.tw</a></h3>
+			</session>
+
+			<article id = "job" class="col-lg-4 text-left">
+				<header>職涯測驗結果</header>
+				<img src="job.png" alt="照片" class="img-thumbnail">
+				<h5>我的職業性格主要為C事務型、R實用型<br>
+				我對事務型、實用型的職業興趣相較於對其他類型的興趣有明顯的區分，<br>
+				也就是說，我對事務型、實用型的職業興趣很明顯地高於其他類型。<br>
+				<header>為何適合這項工作</header>
+				在條件需求中有【需發掘客戶端資訊問題並提供相關解決方案】<br>
+				符合事務型在問題解決策略上，會選擇跟隨既定的法則、常規和程序行事，<br>仰仗權威的建議和諮詢、尋求實用的解決方案，能夠制定有次序且仔細的計畫解決問題。<br></h5>
+			</article>
+
+			<aside id = "future" class="col-lg-4">
+				<header>未來規劃</header>
+				<h5>多修有關程式的課程，在畢業前拿到A證照<br>
+				目前沒有參加任何社團，所以在人際相處方面有不足，
+				會以打工、研習的方式改進。平常多練習程式，以免忘記。</h5><br>
+				
+
+			</aside>
+		</div><br><br>
+
+		<footer>
+			Copyright ©  <?php echo date("Y-m-d") ?> 葉思妤. All Rights Reserved.
+		</footer>
+
+	</main>
+
+</body>
+</html>
